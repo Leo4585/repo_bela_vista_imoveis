@@ -1,0 +1,19 @@
+header {
+  background-color: var(--azul-celeste);
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-header_logo-e-nome {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo {
+  width: 48px;
+}
+
+.menu_hamburguer {
+  width: 48px;
+}

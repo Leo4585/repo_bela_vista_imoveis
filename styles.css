@@ -1,0 +1,18 @@
+@import url(styles/header.css);
+@import url(styles/main.css);
+
+:root {
+    --cor-de-fundo: #EBF4F6;
+    --azul-celeste: #7695FF;
+    --azul-bebe: #9DBDFF;
+    --bege-claro: #FFD7C4;
+    --bege-escuro: #FF9874;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-size: 16px;                        /* Tamanho da fonte das palavras */
+    font-weight: 400;                       /* Peso da fonte */
+    box-sizing: border-box;                 /* Para o conteúdo não sair do body */
+    height: 100vh;
+}
