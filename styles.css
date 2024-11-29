@@ -14,5 +14,4 @@ body {
     font-size: 16px;                        /* Tamanho da fonte das palavras */
     font-weight: 400;                       /* Peso da fonte */
     box-sizing: border-box;                 /* Para o conteúdo não sair do body */
-    height: 100vh;
 }

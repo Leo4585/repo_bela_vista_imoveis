@@ -1,19 +1,19 @@
-header {
+.cabecalho {
   background-color: var(--azul-celeste);
   display: flex;
   justify-content: space-between;
 }
 
-.container-header_logo-e-nome {
+.cabecalho__div__logo-e-nome {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.logo {
+.cabecalho__div__logo-e-nome__logo {
   width: 48px;
 }
 
-.menu_hamburguer {
+.cabecalho__menu__hamburguer {
   width: 48px;
 }
