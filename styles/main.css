@@ -1,3 +1,20 @@
 .apresentacao {
-  background-color: var(--bege-claro);
+  background-color: var(--cor-de-fundo);
+}
+
+.apresentacao__breves-lancamentos__imovel1 {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.apresentacao__breves-lancamentos__imovel1__imagem {
+  width: 80%;
+}
+
+.texto-casa-a-venda {
+  font-weight: 550;
+}
+
+.casa-a-venda__nome-do-bairro {
+  font-weight: 550;
 }
