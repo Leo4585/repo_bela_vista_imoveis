@@ -1,5 +1,15 @@
 .apresentacao {
+  display: flex;
+  flex-direction: column;
   background-color: var(--cor-de-fundo);
+}
+
+.apresentacao__titulo {
+  text-align: center;
+}
+
+.apresentacao__breves-lancamentos__titulo {
+  text-align: center;
 }
 
 .apresentacao__breves-lancamentos__imovel1 {
@@ -7,14 +17,30 @@
   border-radius: 8px;
 }
 
+.container_imagem_casa_1{
+  display: flex;
+  justify-content: center;
+}
+
 .apresentacao__breves-lancamentos__imovel1__imagem {
   width: 80%;
 }
 
 .texto-casa-a-venda {
+  margin-left: 2rem; /* Parou aqui*/
   font-weight: 550;
 }
 
 .casa-a-venda__nome-do-bairro {
   font-weight: 550;
+}
+
+.imovel1__icones-de-informacoes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icones_de_informacoes {
+  width: 20px;
 }
