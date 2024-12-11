@@ -4,7 +4,15 @@
   background-color: var(--cor-de-fundo);
 }
 
-.apresentacao__titulo {
+.caixa_introducao {
+  background-image: url(../img/familia_na_casa.jpeg);
+  height: 30vh;
+  /* background-repeat: no-repeat; */
+  background-size: 100% 100%; /* Ocupa 100% da largura e 100% da altura */
+  
+}
+
+.caixa_introducao__titulo {
   text-align: center;
 }
 
@@ -23,24 +31,37 @@
 }
 
 .apresentacao__breves-lancamentos__imovel1__imagem {
-  width: 80%;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .texto-casa-a-venda {
-  margin-left: 2rem; /* Parou aqui*/
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
   font-weight: 550;
 }
 
 .casa-a-venda__nome-do-bairro {
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
   font-weight: 550;
+}
+
+.casa-a-venda__nome-da-rua {
+  margin-left: 1.5rem;
+}
+
+.casa-a-venda__nome-da-cidade {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .imovel1__icones-de-informacoes {
   display: flex;
-  justify-content: center;
-  gap: 15px;
 }
 
 .icones_de_informacoes {
-  width: 20px;
+  width: 30px;
+  margin-right: 0.5rem;
+  margin-left: 1.5rem;
 }
