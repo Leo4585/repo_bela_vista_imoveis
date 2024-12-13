@@ -5,24 +5,29 @@
 }
 
 .caixa_introducao {
-  background-image: url(../img/familia_na_casa.jpeg);
-  height: 30vh;
-  /* background-repeat: no-repeat; */
-  background-size: 100% 100%; /* Ocupa 100% da largura e 100% da altura */
-  
+  display: flex;
+  align-items: center;                  /* Alinha verticalmente*/
+  justify-content: center;              /* Alinha horizontalmente*/
+  background-color: var(--azul-bebe);
+  height: 5vh;
 }
 
 .caixa_introducao__titulo {
   text-align: center;
+  vertical-align: ceenter;
 }
 
 .apresentacao__breves-lancamentos__titulo {
-  text-align: center;
+  margin-left: 1.5rem;
+  font-weight: 550;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 .apresentacao__breves-lancamentos__imovel1 {
   border: 1px solid black;
   border-radius: 8px;
+  margin: 1rem;
 }
 
 .container_imagem_casa_1{

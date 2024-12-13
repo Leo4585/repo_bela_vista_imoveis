@@ -1,7 +1,11 @@
 .cabecalho {
   background-color: var(--azul-celeste);
   display: flex;
-  justify-content: space-between;
+}
+
+.cabecalho__menu__hamburguer {
+  width: 48px;
+  margin-right: 3rem;
 }
 
 .cabecalho__div__logo-e-nome {
@@ -11,9 +15,5 @@
 }
 
 .cabecalho__div__logo-e-nome__logo {
-  width: 48px;
-}
-
-.cabecalho__menu__hamburguer {
   width: 48px;
 }
