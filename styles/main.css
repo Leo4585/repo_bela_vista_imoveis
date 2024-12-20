@@ -14,14 +14,14 @@
 
 .caixa_introducao__titulo {
   text-align: center;
-  vertical-align: ceenter;
+  vertical-align: center;
 }
 
 /* SEÇÃO BREVES LANÇAMENTOS - IMÓVEIS 1 E 2*/
 .apresentacao__breves-lancamentos__titulo {
   margin-top: 2rem;
   margin-left: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 550;
 }
 
