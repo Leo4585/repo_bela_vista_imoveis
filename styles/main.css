@@ -65,10 +65,16 @@
 
 .imovel1__icones-de-informacoes {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caixa_icone_legenda {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .icones_de_informacoes {
   width: 30px;
-  margin-right: 0.5rem;
-  margin-left: 1.5rem;
 }
