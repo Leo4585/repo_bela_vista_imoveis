@@ -8,6 +8,29 @@
   margin-right: 3rem;
 }
 
+img#burguer {
+  padding: 10px;
+  cursor: pointer;
+}
+
+img#burguer:hover {
+  background-color: var(--cor-de-fundo);
+}
+
+menu {
+  display: none;
+  position: absolute; /* O pai é relative */
+}
+
+.menu__item {
+  background-color: var(--azul-celeste);
+  padding: 1rem;
+}
+
+.menu__item__link {
+  text-decoration: none;
+}
+
 .cabecalho__div__logo-e-nome {
   display: flex;
   align-items: center;
