@@ -2,6 +2,11 @@
   background-color: var(--azul-celeste);
   display: flex;
   justify-content: space-between;
+  border-bottom: 3px solid rgb(88, 88, 216);
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 100%;
 }
 
 .cabecalho__div__logo-e-nome {
