@@ -20,9 +20,9 @@
 
 /* SEÇÃO BREVES LANÇAMENTOS - IMÓVEIS 1 E 2*/
 .apresentacao__breves-lancamentos__titulo {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  font-size: 2rem;
+  padding-top: 1.3rem;
+  padding-left: 2rem;
+  font-size: 1.3rem;
   font-weight: 550;
 }
 
