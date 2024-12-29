@@ -44,7 +44,7 @@ menu {
 }
 
 .menu__item {
-  background-color: var(--azul-celeste);
+  background-color: var(--cor-de-fundo);
   padding: 1rem;
 }
 
