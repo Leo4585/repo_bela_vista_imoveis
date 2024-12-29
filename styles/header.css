@@ -41,6 +41,7 @@ menu {
 
 #itens {
   right: 0rem;
+  border: 1px solid black;
 }
 
 .menu__item {

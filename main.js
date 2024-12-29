@@ -12,16 +12,16 @@
 
 
 
-/* CAPTURANDO ELEMENTOS NO DOM */ 
+// CAPTURANDO ELEMENTOS NO DOM
 const imgMenuHamburguer = document.getElementById('burguer');
 const menuListaMenuHamburguer = document.getElementById('itens');
 
-/* O QUE ACONTECE AO CLICAR NO MENU HAMBÚRGUER */ 
+// O QUE ACONTECE AO CLICAR NO MENU HAMBÚRGUER
 imgMenuHamburguer.addEventListener('click', alterarDisplay);
 
-/* DEFINIÇÃO DA FUNÇÃO */
+// DEFINIÇÃO DA FUNÇÃO
 function alterarDisplay(evento) {
-  evento.preventDefault();
+  evento.preventDefault();   // Previne o recarregamento do formulário (evento padrão)
 
   if (menuListaMenuHamburguer.style.display == 'block') {
     menuListaMenuHamburguer.style.display = 'none';
