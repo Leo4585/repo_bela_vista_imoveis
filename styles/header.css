@@ -8,6 +8,7 @@
   top: 0%;
   right: 0%;
   width: 100%;
+  z-index: 99; /* Isso faz com que o carrossel não fique sobreponodo a lista do clique no menu hamburguer (#itens) */
 }
 
 .cabecalho__div__logo-e-nome {
@@ -19,6 +20,10 @@
 
 .cabecalho__div__logo-e-nome__logo {
   width: 48px;
+}
+
+.cabecalho__menu {
+  position: relative;
 }
 
 .cabecalho__menu__hamburguer {
@@ -34,14 +39,16 @@ img#burguer:hover {
   background-color: var(--cor-de-fundo);
 }
 
-menu {
+#itens {
   display: none;
   position: absolute;
+  right: 0rem;
+  width: 13rem;
+  border: 1px solid black;
 }
 
-#itens {
-  right: 0rem;
-  border: 1px solid black;
+#itens > ul {
+  z-index: 99;
 }
 
 .menu__item {

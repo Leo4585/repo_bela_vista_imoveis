@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bela Vista Imóveis</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -55,8 +55,6 @@
                                 <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem6.jpg" alt="imagem do imóvel ou terreno"></div>
                                 <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem7.jpg" alt="imagem do imóvel ou terreno"></div>
                                 <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem8.jpg" alt="imagem do imóvel ou terreno"></div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
                                 ...
                             </div>
                             <!-- If we need pagination -->
@@ -65,9 +63,6 @@
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
-
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                     <figcaption class="apresentacao__breves-lancamentos__imovel1__descricao">
@@ -137,37 +132,26 @@
         <p>Contato: (71) 99999-9999</p>
     </footer>
 
-    <script src="main.js"></script>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
-
+            
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
+                type: 'bullets',
             },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-
             autoplay: {
                 delay: 5000,
             },
         });
-    </script>
+        </script>
+
+        <script src="main.js"></script>
 </body>
 
 </html>

@@ -42,6 +42,10 @@
   height: 300px;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  display: none;
+}
+
 .apresentacao__breves-lancamentos__imovel1__imagem {
   width: 100%;
   height: 100%;
