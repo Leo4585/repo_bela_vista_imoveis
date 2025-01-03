@@ -14,12 +14,20 @@
 .cabecalho__div__logo-e-nome {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   padding: 10px;
 }
 
 .cabecalho__div__logo-e-nome__logo {
   width: 48px;
+}
+
+.cabecalho__div__logo-e-nome__nome {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 
 .cabecalho__menu {
