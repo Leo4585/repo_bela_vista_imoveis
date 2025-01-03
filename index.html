@@ -7,6 +7,7 @@
     <title>Bela Vista Imóveis</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,11 +21,11 @@
             <menu id="itens">
                 <ul>
                     <li class="menu__item"><a class="menu__item__link" href="">INÍCIO</a></li>
-                    <li class="menu__item" ><a class="menu__item__link" href="">QUEM SOMOS</a></li>
-                    <li class="menu__item" ><a class="menu__item__link" href="">CONTATO</a></li>
-                    <li class="menu__item" ><a class="menu__item__link" href="">CASAS À VENDA</a></li>
-                    <li class="menu__item" ><a class="menu__item__link" href="">CASAS PARA ALUGUEL</a></li>
-                    <li class="menu__item" ><a class="menu__item__link" href="">TERRENOS</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="">QUEM SOMOS</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="">CONTATO</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="">CASAS À VENDA</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="">CASAS PARA ALUGUEL</a></li>
+                    <li class="menu__item"><a class="menu__item__link" href="">TERRENOS</a></li>
                 </ul>
             </menu>
         </nav>
@@ -32,7 +33,7 @@
 
     <main class="apresentacao">
         <section class="caixa_introducao">
-                <h1 class="caixa_introducao__titulo">A história do seu sonho começa aqui!</h1>
+            <h1 class="caixa_introducao__titulo">A história do seu sonho começa aqui!</h1>
         </section>
 
         <section class="apresentacao__breves-lancamentos">
@@ -41,7 +42,33 @@
             <article class="apresentacao__breves-lancamentos__imovel1">
                 <figure>
                     <div class="container_imagem_casa_1">
-                        <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa-1.jpeg" alt="imagem do imóvel ou terreno">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem1.jpeg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem2.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem3.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem4.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem5.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem6.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem7.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide"> <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa1-imagem8.jpg" alt="imagem do imóvel ou terreno"></div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                ...
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
                     </div>
                     <figcaption class="apresentacao__breves-lancamentos__imovel1__descricao">
                         <h3 class="texto-casa-a-venda">Casa à venda</h3>
@@ -73,7 +100,8 @@
             <article class="apresentacao__breves-lancamentos__imovel1">
                 <figure>
                     <div class="container_imagem_casa_1">
-                        <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa-2.jpg" alt="imagem do imóvel ou terreno">
+                        <img class="apresentacao__breves-lancamentos__imovel1__imagem" src="img/casa-2.jpg"
+                            alt="imagem do imóvel ou terreno">
                     </div>
                     <figcaption class="apresentacao__breves-lancamentos__imovel1__descricao">
                         <h3 class="texto-casa-a-venda texto-casa-para-aluguel">Casa para aluguel</h3>
@@ -102,7 +130,7 @@
                 </figure>
             </article>
         </section>
-        
+
     </main>
 
     <footer class="rodape">
@@ -110,6 +138,36 @@
     </footer>
 
     <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
 
 </html>
