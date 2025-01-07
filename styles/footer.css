@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   background-color: rgb(197, 120, 120);
-  height: 5vh;
+
+  padding: 2%;
 } 
