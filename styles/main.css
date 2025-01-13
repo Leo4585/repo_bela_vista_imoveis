@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;                  /* Alinha verticalmente*/
   justify-content: center;              /* Alinha horizontalmente*/
-  background-color: var(--azul-bebe);
+  background-color: var(--azul-bebe); 
   height: 12vh;
 }
 
