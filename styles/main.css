@@ -28,7 +28,7 @@
 /* SEÇÃO BREVES LANÇAMENTOS - IMÓVEIS 1 E 2*/
 .apresentacao__breves-lancamentos__titulo {
   padding-top: 1.3rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   font-size: 1.3rem;
   font-weight: 550;
 }
@@ -36,7 +36,7 @@
 .apresentacao__breves-lancamentos__imovel1 {
   border: 1px solid black;
   border-radius: 8px;
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
 }
 
 .container_imagem_casa_1{
