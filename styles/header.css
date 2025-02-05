@@ -34,20 +34,26 @@
   position: relative;
 }
 
+.cabecalho__menu__hamburguer-toggle {
+  width: 48px;
+  background-color: var(--cor-de-fundo);
+  padding: 10px;
+}
 .cabecalho__menu__hamburguer {
   width: 48px;
-}
-
-img#burguer {
+  background-color: var(--azul-celeste);
   padding: 10px;
-  cursor: pointer;
 }
 
-img#burguer:hover {
-  background-color: var(--cor-de-fundo);
+.itens__menu-hamburguer-toggle {
+  display: block;
+  position: absolute;
+  right: 0rem;
+  width: 13rem;
+  border: 1px solid black;
 }
 
-#itens {
+.itens__menu-hamburguer {
   display: none;
   position: absolute;
   right: 0rem;
