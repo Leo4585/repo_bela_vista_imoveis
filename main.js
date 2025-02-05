@@ -2,5 +2,10 @@ import { alterarDisplayMenuHamburguer } from "./scripts/alterarDisplayMenuHambur
 const imgMenuHamburguer = document.getElementById('burguer');
 
 
-// O QUE ACONTECE AO CLICAR NO MENU HAMBÚRGUER
-imgMenuHamburguer.addEventListener('click', alterarDisplayMenuHamburguer);
+document.addEventListener('click', (evento) => {
+  // O QUE ACONTECE AO CLICAR NO MENU HAMBÚRGUER
+  if(evento.target.id == imgMenuHamburguer.id) {
+    alterarDisplayMenuHamburguer();
+  }
+})
+

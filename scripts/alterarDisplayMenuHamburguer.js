@@ -4,7 +4,7 @@ const menuListaMenuHamburguer = document.getElementById('itens');
 
 export function alterarDisplayMenuHamburguer(evento) {
 // DEFINIÇÃO DA FUNÇÃO
-  evento.preventDefault();   // Previne o recarregamento do formulário (evento padrão)
+  //evento.preventDefault();   // Previne o recarregamento do formulário (evento padrão)
   
   if (menuListaMenuHamburguer.style.display == 'block') {
     menuListaMenuHamburguer.style.display = 'none';
