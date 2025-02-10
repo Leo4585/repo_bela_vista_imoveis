@@ -11,12 +11,11 @@
   align-items: center;                  /* Alinha verticalmente*/
   justify-content: center;              /* Alinha horizontalmente*/
   background-color: var(--azul-bebe); 
-  height: 12vh;
+  height: 5vh;
 }
 
 .caixa_introducao__titulo {
   text-align: center;
-  padding: 1rem;
 }
 
 /* SEÇÃO BREVES LANÇAMENTOS - IMÓVEIS 1 E 2*/
