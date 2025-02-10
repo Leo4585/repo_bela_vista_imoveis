@@ -19,12 +19,6 @@
   padding: 1rem;
 }
 
-#aviso_site_em_desenvolvimento {
-  color: red;
-  text-align: center;
-  font-weight: 550;
-}
-
 /* SEÇÃO BREVES LANÇAMENTOS - IMÓVEIS 1 E 2*/
 .apresentacao__breves-lancamentos__titulo {
   padding-top: 1.3rem;
