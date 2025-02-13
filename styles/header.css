@@ -19,11 +19,11 @@
   padding: 10px;
 }
 
-.cabecalho__div__logo-e-nome__logo {
+.cabecalho__img__logo-e-nome__logo {
   width: 48px;
 }
 
-.cabecalho__div__logo-e-nome__nome {
+.cabecalho__p__logo-e-nome__nome {
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -32,22 +32,22 @@
 }
 
 /* MENU HAMBÚRGUER*/
-.cabecalho__menu {
+.cabecalho__nav__menu {
   position: relative;
 }
 
-.cabecalho__menu__hamburguer-toggle {
+.cabecalho__img__menu-hamburguer-toggle {
   width: 48px;
   background-color: var(--cor-de-fundo);
   padding: 10px;
 }
-.cabecalho__menu__hamburguer {
+.cabecalho__img__menu-hamburguer {
   width: 48px;
   background-color: var(--azul-celeste);
   padding: 10px;
 }
 
-.itens__menu-hamburguer-toggle {
+.cabecalho__menu__menu-hamburguer__itens-toggle {
   display: block;
   position: absolute;
   right: 0rem;
@@ -55,7 +55,7 @@
   border: 1px solid black;
 }
 
-.itens__menu-hamburguer {
+.cabecalho__menu__menu-hamburguer__itens {
   display: none;
   position: absolute;
   right: 0rem;
@@ -67,11 +67,11 @@
   z-index: 99;
 }
 
-.menu__item {
+.cabecalho__li__menu-hamburguer__itens__item {
   background-color: var(--cor-de-fundo);
   padding: 1rem;
 }
 
-.menu__item__link {
+.cabecalho__link__menu-hamburguer__itens__item__link {
   text-decoration: none;
 }

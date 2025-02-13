@@ -1,3 +1,4 @@
+/* SEÇÃO */
 .apresentacao {
   display: flex;
   flex-direction: column;
@@ -5,7 +6,7 @@
   margin-top: 75px; /* Necessário após fixar a nav do header, caso contrário, fica por trás */
 }
 
-.caixa_introducao {
+.apresentacao__section__introducao {
   display: flex;
   flex-direction: column;
   align-items: center;                  /* Alinha verticalmente*/
@@ -14,29 +15,34 @@
   height: 5vh;
 }
 
-.caixa_introducao__titulo {
+.apresentacao__h1__introducao__titulo {
   text-align: center;
 }
 
-/* SEÇÃO BREVES LANÇAMENTOS - IMÓVEIS 1 E 2*/
-.apresentacao__breves-lancamentos__titulo {
+/* SEÇÃO ANÚNCIOS EM DESTAQUE*/
+.apresentacao__section__anuncios-em-destaque {
+
+}
+
+.anuncios-em-destaque__h1__titulo {
   padding-top: 1.3rem;
   padding-left: 1rem;
   font-size: 1.3rem;
   font-weight: 550;
 }
 
-.apresentacao__breves-lancamentos__imovel1 {
+.anuncios-em-destaque__article {
   border: 1px solid black;
   border-radius: 8px;
   margin: 1rem 1rem;
 }
 
-.container_imagem_casa_1{
+.anuncios-em-destaque__figure__div{
   display: flex;
   justify-content: center;
 }
 
+/* ESTILIZAÇÃO DAS IMAGENS NO CARROSSEL */
 .swiper {
   width: 600px;
   height: 400px;
