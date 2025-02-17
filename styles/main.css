@@ -57,16 +57,22 @@
 }
 
 /* DESCRIÇÃO DO IMÓVEL (LEGENDAS TEXTUAIS DAS IMAGENS) */
+.caixa__legenda__titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
 .legenda__titulo {
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-top: 1.5rem;
   font-weight: 550;
   font-size: 1.3rem;
 }
 
 .legenda__nome-do-bairro {
-  margin-left: 1.5rem;
   margin-top: 1.5rem;
+  margin-left: 1.5rem;
   font-weight: 550;
 }
 

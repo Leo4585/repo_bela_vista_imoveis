@@ -1,4 +1,4 @@
-import { alternarDisplayMenuHamburguer } from "./scripts/alterarDisplayMenuHamburguer.js";
+import { alternarDisplayMenuHamburguer } from "./alterarDisplayMenuHamburguer.js";
 const imgMenuHamburguer = document.getElementById('burguer');
 const menuListaMenuHamburguer = document.getElementById('itens');
 
