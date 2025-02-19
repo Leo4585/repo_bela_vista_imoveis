@@ -27,19 +27,19 @@ function exibirImoveisNaTela(listaDeImoveis) {
                                 <!-- Slides -->
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="img/casa1-imagem6.jpg" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem1}" alt="imagem do imóvel ou terreno"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="img/casa1-imagem3.jpg" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem2}" alt="imagem do imóvel ou terreno"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="img/casa1-imagem2.jpg" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem3}" alt="imagem do imóvel ou terreno"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="img/casa1-imagem7.jpg" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem4}" alt="imagem do imóvel ou terreno"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="img/casa1-imagem8.jpg" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem5}" alt="imagem do imóvel ou terreno"></div>
                                 ...
                             </div>
                             <!-- If we need pagination -->
