@@ -54,7 +54,7 @@ function exibirImoveisNaTela(listaDeImoveis) {
                     <figcaption class="anuncios-em-destaque__figcaption__legendas">
                         <div class="caixa__legenda__titulo">
                             <h3 class="legenda__titulo">Casa à venda</h3>
-                            <h3 class="legenda__titulo">R$ 210 mil</h3>
+                            <h3 class="legenda__titulo">R$ ${imovel.valor} mil</h3>
                         </div>
                         <div>
                             <p class="legenda__nome-do-bairro">Residencial Jardim Universitário 1</p>
