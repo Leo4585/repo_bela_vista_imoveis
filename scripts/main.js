@@ -27,19 +27,19 @@ function exibirImoveisNaTela(listaDeImoveis) {
                                 <!-- Slides -->
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="${imovel.imagem1}" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem1}" alt="${imovel.alt}"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="${imovel.imagem2}" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem2}" alt="${imovel.alt}"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="${imovel.imagem3}" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem3}" alt="${imovel.alt}"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="${imovel.imagem4}" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem4}" alt="${imovel.alt}"></div>
                                 <div class="swiper-slide"> <img
                                         class="swiper-slide__imagem"
-                                        src="${imovel.imagem5}" alt="imagem do imóvel ou terreno"></div>
+                                        src="${imovel.imagem5}" alt="${imovel.alt}"></div>
                                 ...
                             </div>
                             <!-- If we need pagination -->
@@ -53,31 +53,31 @@ function exibirImoveisNaTela(listaDeImoveis) {
 
                     <figcaption class="anuncios-em-destaque__figcaption__legendas">
                         <div class="caixa__legenda__titulo">
-                            <h3 class="legenda__titulo">Casa à venda</h3>
+                            <h3 class="legenda__titulo">${imovel.titulo}</h3>
                             <h3 class="legenda__titulo">R$ ${imovel.valor} mil</h3>
                         </div>
                         <div>
-                            <p class="legenda__nome-do-bairro">Residencial Jardim Universitário 1</p>
-                            <p class="legenda__nome-da-rua">Rua T, 49</p>
-                            <p class="legenda__nome-da-cidade">Irecê, Bahia</p>
+                            <p class="legenda__nome-do-bairro">${imovel.bairro}</p>
+                            <p class="legenda__nome-da-rua">${imovel.ruaNumero}</p>
+                            <p class="legenda__nome-da-cidade">${imovel.cidadeEstado}</p>
                         </div>
 
                         <div class="container__icones-de-informacoes">
                             <div class="icones-de-informacoes__box">
                                 <img class="icones-de-informacoes__box__img" src="img/icone_metragem.svg" alt="Área construída">
-                                <p>120m²</p>
+                                <p>${imovel.metragemTotal}m²</p>
                             </div>
                             <div class="icones-de-informacoes__box">
                                 <img class="icones-de-informacoes__box__img" src="img/icone_dormitorio.svg" alt="Dormitórios">
-                                <p>3</p>
+                                <p>${imovel.qtdDormitorios}</p>
                             </div>
                             <div class="icones-de-informacoes__box">
                                 <img class="icones-de-informacoes__box__img" src="img/icone_banheiro.svg" alt="Banheiros">
-                                <p>2</p>
+                                <p>${imovel.qtdBanheiros}</p>
                             </div>
                             <div class="icones-de-informacoes__box">
                                 <img class="icones-de-informacoes__box__img" src="img/icone_garagem.svg" alt="Vagas">
-                                <p>1</p>
+                                <p>${imovel.qtdVagasGaragem}</p>
                             </div>
                         </div>
                     </figcaption>
@@ -117,4 +117,3 @@ document.addEventListener('click', (evento) => {
     imgMenuHamburguer.classList.add('cabecalho__img__menu-hamburguer');
   }
 });
-

@@ -1,0 +1,30 @@
+endpoint = https://leo4585.github.io/imoveis.json
+
+---- ESTRUTURA DO ARQUIVO .JSON: -------------------------------
+[
+    {
+        "titulo": "Casa à venda",
+        "valor": 210,
+        "bairro": "Residencial Jardim Universitário 2",
+        "ruaNumero": "Rua D, 37",
+        "cidadeEstado": "Irecê, Bahia",
+        "metragemTotal": 200,
+        "qtdDormitorios": 3,
+        "qtdBanheiros": 2,
+        "qtdVagasGaragem": 1,
+        "categoria": "casa",
+        "imagem1": "https://leo4585.github.io/casa1-imagem1.jpg",
+        "imagem2": "https://leo4585.github.io/casa1-imagem2.jpg",
+        "imagem3": "https://leo4585.github.io/casa1-imagem3.jpg",
+        "imagem4": "https://leo4585.github.io/casa1-imagem4.jpg",
+        "imagem5": "https://leo4585.github.io/casa1-imagem5.jpg",
+        "alt": "imagem do imóvel ou terreno"
+    }
+]
+-----------------------------------------------------------------
+
+---- CATEGORIAS DOS IMOVEIS: ------------------------------------
+1. casa
+2. terreno
+3. aluguel
+-----------------------------------------------------------------
