@@ -2,6 +2,7 @@ const elementoParaInserirImoveis = document.getElementById('imoveis');
 
 
 export function exibirImoveisNaTela(listaDeImoveis) {
+  elementoParaInserirImoveis.innerHTML = '';
   listaDeImoveis.forEach(imovel => {
     elementoParaInserirImoveis.innerHTML += `
       <article class="anuncios-em-destaque__article">
@@ -41,7 +42,7 @@ export function exibirImoveisNaTela(listaDeImoveis) {
                     <figcaption class="anuncios-em-destaque__figcaption__legendas">
                         <div class="caixa__legenda__titulo">
                             <h3 class="legenda__titulo">${imovel.titulo}</h3>
-                            <h3 class="legenda__titulo">R$ ${imovel.valor} mil</h3>
+                            <h3 class="legenda__titulo">${imovel.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</h3>
                         </div>
                         <div>
                             <p class="legenda__nome-do-bairro">${imovel.bairro}</p>

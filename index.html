@@ -21,15 +21,16 @@
         <nav class="cabecalho__nav__menu">
             <img id="burguer" class="cabecalho__img__menu-hamburguer cabecalho__img__menu-hamburguer-toggle"
                 src="img/hamburger-menu.svg" alt="Menu de opções">
-            <menu class="cabecalho__menu__menu-hamburguer__itens cabecalho__menu__menu-hamburguer__itens-toggle" id="itens">
-                <ul>
-                    <li class="cabecalho__li__menu-hamburguer__itens__item"><a class="cabecalho__link__menu-hamburguer__itens__item__link" href="">INÍCIO</a></li>
-                    <li class="cabecalho__li__menu-hamburguer__itens__item"><a class="cabecalho__link__menu-hamburguer__itens__item__link" href="">QUEM SOMOS</a></li>
-                    <li class="cabecalho__li__menu-hamburguer__itens__item"><a class="cabecalho__link__menu-hamburguer__itens__item__link" href="">CONTATO</a></li>
-                    <li class="cabecalho__li__menu-hamburguer__itens__item"><a class="cabecalho__link__menu-hamburguer__itens__item__link" href="">CASAS À VENDA</a></li>
-                    <li class="cabecalho__li__menu-hamburguer__itens__item"><a class="cabecalho__link__menu-hamburguer__itens__item__link" href="">CASAS PARA ALUGUEL</a></li>
-                    <li class="cabecalho__li__menu-hamburguer__itens__item"><a class="cabecalho__link__menu-hamburguer__itens__item__link" href="">TERRENOS</a></li>
-                </ul>
+                <menu>
+                    <ul class="cabecalho__menu__menu-hamburguer__itens cabecalho__menu__menu-hamburguer__itens-toggle" id="itens">
+                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-inicio">INÍCIO</button></li>
+                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-contato">CONTATO</button></li>
+                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-quem-somos">QUEM SOMOS</button></li>
+                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-casa-a-venda link-de-filtro" id="linkFiltrarCasasAVenda" value="casa">CASAS À VENDA</button></li>
+                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-casas-para-aluguel link-de-filtro" id="linkFiltrarCasasParaAluguel" value="aluguel">CASAS PARA ALUGUEL</button></li>
+                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-terrenos link-de-filtro" id="linkFiltrarTerrenos" value="terreno">TERRENOS</button></li>
+                    </ul>
+                </menu>
             </menu>
         </nav>
     </header>

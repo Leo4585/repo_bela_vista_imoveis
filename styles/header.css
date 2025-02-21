@@ -60,18 +60,17 @@
   position: absolute;
   right: 0rem;
   width: 13rem;
-  border: 1px solid black;
 }
 
 #itens > ul {
   z-index: 99;
 }
 
-.cabecalho__li__menu-hamburguer__itens__item {
+.nav__itens__item {
   background-color: var(--cor-de-fundo);
   padding: 1rem;
 }
 
-.cabecalho__link__menu-hamburguer__itens__item__link {
-  text-decoration: none;
+.nav__itens__item__btn {
+  border: none;
 }

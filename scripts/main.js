@@ -1,12 +1,12 @@
 import { alternarDisplayMenuHamburguer } from "./alterarDisplayMenuHamburguer.js";
 import { exibirImoveisNaTela } from "./exibirImoveisNaTela.js";
+import { filtrarImoveis } from "./filtrarImoveis.js";
 
 const imgMenuHamburguer = document.getElementById('burguer');
 const menuListaMenuHamburguer = document.getElementById('itens');
-let imoveis = [];
+
+export let imoveis = [];
 const endpointDaAPI = "https://leo4585.github.io/imoveis.json";
-
-
 getBuscarImoveisDaAPI();
 
 async function getBuscarImoveisDaAPI() {
@@ -29,3 +29,7 @@ document.addEventListener('click', (evento) => {
     imgMenuHamburguer.classList.add('cabecalho__img__menu-hamburguer');
   }
 });
+
+
+const botoesDeFiltro = document.querySelectorAll('.link-de-filtro');
+botoesDeFiltro.forEach(botaoDeFiltro => botaoDeFiltro.addEventListener('click', filtrarImoveis));
