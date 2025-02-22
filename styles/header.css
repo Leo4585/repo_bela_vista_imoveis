@@ -73,4 +73,5 @@
 
 .nav__itens__item__btn {
   border: none;
+  background-color: var(--cor-de-fundo);
 }
