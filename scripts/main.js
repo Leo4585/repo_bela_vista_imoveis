@@ -2,8 +2,6 @@ import { alternarDisplayMenuHamburguer } from "./alterarDisplayMenuHamburguer.js
 import { exibirImoveisNaTela } from "./exibirImoveisNaTela.js";
 import { filtrarImoveis } from "./filtrarImoveis.js";
 
-const imgMenuHamburguer = document.getElementById('burguer');
-const menuListaMenuHamburguer = document.getElementById('itens');
 
 export let imoveis = [];
 const endpointDaAPI = "https://leo4585.github.io/imoveis.json";
@@ -15,7 +13,10 @@ async function getBuscarImoveisDaAPI() {
   exibirImoveisNaTela(imoveis)
 }
 
-// MENU HAMBURGUER - GERENCIAMENTO AO CLICAR
+// MENU HAMBURGUER - GERENCIAMENTO DO DISPLAY ENTRE BLOCK E NONE
+const imgMenuHamburguer = document.getElementById('burguer');
+const menuListaMenuHamburguer = document.getElementById('itens');
+
 // O que acontece ao clicar na img do menu hambúrguer
 imgMenuHamburguer.addEventListener('click', (evento) => {
   if (evento.target.id == imgMenuHamburguer.id) {
@@ -30,6 +31,6 @@ document.addEventListener('click', (evento) => {
   }
 });
 
-
+// Botões de filtro no menu hamburgúrguer
 const botoesDeFiltro = document.querySelectorAll('.link-de-filtro');
 botoesDeFiltro.forEach(botaoDeFiltro => botaoDeFiltro.addEventListener('click', filtrarImoveis));
