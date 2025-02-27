@@ -1,0 +1,54 @@
+.principal {
+  background-color: var(--cor-de-fundo);
+}
+
+.caixa_logo__imagem_e_texto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 40px;
+  background-color: var(--azul-celeste);
+  margin-bottom: 60px;
+}
+
+.logo_imagem {
+  width: 60px;
+}
+
+.logo_texto {
+  font-family: "Space Grotesk", serif;
+}
+
+.formulario_de_contato {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  gap: 20px;
+}
+
+.caixa__label_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  border: 0.1px solid gray;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.form__textarea {
+  border: 0.1px solid gray;
+  border-radius: 5px;
+
+}
+
+#btn_enviar {
+  width: 50vw;
+  height: 10vw;
+  margin: auto;
+  background-color: var(--azul-bebe);
+  border-radius: 5px;
+  font-size: 2rem;
+}
