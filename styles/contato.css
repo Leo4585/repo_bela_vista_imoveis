@@ -17,6 +17,7 @@
 
 .logo_texto {
   font-family: "Space Grotesk", serif;
+  color: var(--azul-escuro);
 }
 
 .formulario_de_contato {

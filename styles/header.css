@@ -12,6 +12,10 @@
   z-index: 99; /* Isso faz com que o carrossel não fique sobreponodo a lista do clique no menu hamburguer (#itens) */
 }
 
+.cabecalho__anchor {
+  text-decoration: none;
+}
+
 .cabecalho__div__logo-e-nome {
   display: flex;
   align-items: center;
@@ -29,6 +33,7 @@
   font-weight: 500;
   font-style: normal;
   font-size: 1.2rem;
+  color: var(--azul-escuro)
 }
 
 /* MENU HAMBÚRGUER*/
@@ -73,4 +78,10 @@
 
 .nav__itens__item__btn {
   border: none;
+  color: var(--azul-escuro);
+}
+
+.btn-contato__anchor {
+  text-decoration: none;
+  color: var(--azul-escuro)
 }
