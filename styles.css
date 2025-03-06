@@ -1,6 +1,7 @@
 @import url(styles/header.css);
 @import url(styles/main.css);
 @import url(styles/footer.css);
+@import url(styles/contato.css);
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 :root {
@@ -9,6 +10,8 @@
     --azul-bebe: #9DBDFF;
     --bege-claro: #FFD7C4;
     --bege-escuro: #FF9874;
+    --azul-escuro: rgb(1, 1, 59);
+
 }
 
 body {
