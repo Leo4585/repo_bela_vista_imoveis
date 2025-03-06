@@ -54,6 +54,7 @@
   height: 10vw;
   margin: auto;
   background-color: var(--azul-bebe);
+  border: 2px solid black;
   border-radius: 5px;
   font-size: 2rem;
 }
