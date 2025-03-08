@@ -1,0 +1,26 @@
+{
+  "name": "bela_vista_imoveis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leo4585/repo_bela_vista_imoveis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leo4585/repo_bela_vista_imoveis/issues"
+  },
+  "homepage": "https://github.com/Leo4585/repo_bela_vista_imoveis#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
