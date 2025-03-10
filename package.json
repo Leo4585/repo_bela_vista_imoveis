@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Leo4585/repo_bela_vista_imoveis#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "nodemon": "^3.1.9"
   }
