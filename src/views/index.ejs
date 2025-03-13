@@ -1,28 +1,4 @@
-<%- include('head'); %>
-
-    <header class="cabecalho">
-        <a class="cabecalho__anchor" href="http://localhost:3000/">
-            <div class="cabecalho__div__logo-e-nome">
-                <img class="cabecalho__img__logo-e-nome__logo" src="/img/logo.svg" alt="Logo da Bela Vista Imóveis">
-                <p class="cabecalho__p__logo-e-nome__nome">BELA VISTA IMÓVEIS</p>
-            </div>
-        </a>
-        <nav class="cabecalho__nav__menu">
-            <img id="burguer" class="cabecalho__img__menu-hamburguer cabecalho__img__menu-hamburguer-toggle"
-                src="img/hamburger-menu.svg" alt="Menu de opções">
-                <menu>
-                    <ul class="cabecalho__menu__menu-hamburguer__itens cabecalho__menu__menu-hamburguer__itens-toggle" id="itens">
-                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-inicio"><a class="btn-contato__anchor" href="./index.html">INÍCIO</a></button></li>
-                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-contato"><a class="btn-contato__anchor" href="./contato.html">CONTATO</a></button></li>
-                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-quem-somos"><a class="btn-contato__anchor" href="./quemSomos.html">QUEM SOMOS</a></button></li>
-                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-casa-a-venda link-de-filtro" id="linkFiltrarCasasAVenda" value="casa">CASAS À VENDA</button></li>
-                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-casas-para-aluguel link-de-filtro" id="linkFiltrarCasasParaAluguel" value="aluguel">CASAS PARA ALUGUEL</button></li>
-                        <li class="nav__itens__item"><button class="nav__itens__item__btn btn-terrenos link-de-filtro" id="linkFiltrarTerrenos" value="terreno">TERRENOS</button></li>
-                    </ul>
-                </menu>
-            </menu>
-        </nav>
-    </header>
+<%- include('includes/head'); %>
 
     <main class="apresentacao">
         <section class="apresentacao__section__introducao">
@@ -37,4 +13,4 @@
 
     </main>
 
-<%- include('footer'); %>
+<%- include('includes/footer'); %>
