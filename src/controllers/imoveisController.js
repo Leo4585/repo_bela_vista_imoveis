@@ -1,4 +1,14 @@
-//import { imoveis } from '../../public/scripts/main.js'
+
+
+let imoveis = [];
+const endpointDaAPI = "https://leo4585.github.io/imoveis.json";
+getBuscarImoveisDaAPI();
+
+async function getBuscarImoveisDaAPI() {
+  const res = await fetch(endpointDaAPI);
+  imoveis = await res.json();  // Aqui o array "imoveis" é alimentado/atualizado
+}
+
 
 
 class ImoveisController {
@@ -12,10 +22,11 @@ class ImoveisController {
 
   static async filtrarCasas (req, res) {
     try {
-      const casasFiltradas = imoveis.filter(imovel => imovel.categoria == 'casa');
-      res.render('index', { imovel: casasFiltradas });
+      const categoria = 'casa';
+      let casasFiltradas = imoveis.filter(imovel => imovel.categoria == categoria);
+      res.render('index', { listaDeImoveis: casasFiltradas });
     } catch (error) {
-      
+      res.send('Erro ao carregar a página de casas');
     }
   };
 

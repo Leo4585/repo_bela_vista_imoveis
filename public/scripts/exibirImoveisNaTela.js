@@ -1,4 +1,4 @@
-const elementoParaInserirImoveis = document.getElementById('imoveis');
+// const elementoParaInserirImoveis = document.getElementById('imoveis');
 
 
 export function exibirImoveisNaTela(listaDeImoveis) {

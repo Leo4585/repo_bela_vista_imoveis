@@ -1,17 +1,17 @@
-import { alternarDisplayMenuHamburguer } from "./alterarDisplayMenuHamburguer.js";
-import { exibirImoveisNaTela } from "./exibirImoveisNaTela.js";
-import { filtrarImoveis } from "./filtrarImoveis.js";
+// import { alternarDisplayMenuHamburguer } from "./alterarDisplayMenuHamburguer.js";
+// import { exibirImoveisNaTela } from "./exibirImoveisNaTela.js";
+// import { filtrarImoveis } from "./filtrarImoveis.js";
 
 
-export let imoveis = [];
-const endpointDaAPI = "https://leo4585.github.io/imoveis.json";
-getBuscarImoveisDaAPI();
+// export let imoveis = [];
+// const endpointDaAPI = "https://leo4585.github.io/imoveis.json";
+// getBuscarImoveisDaAPI();
 
-async function getBuscarImoveisDaAPI() {
-  const res = await fetch(endpointDaAPI);
-  imoveis = await res.json();  // Aqui o array "imoveis" é alimentado/atualizado
-  exibirImoveisNaTela(imoveis)
-}
+// async function getBuscarImoveisDaAPI() {
+//   const res = await fetch(endpointDaAPI);
+//   imoveis = await res.json();  // Aqui o array "imoveis" é alimentado/atualizado
+//   exibirImoveisNaTela(imoveis)
+// }
 
 // MENU HAMBURGUER - GERENCIAMENTO DO DISPLAY ENTRE BLOCK E NONE
 const imgMenuHamburguer = document.getElementById('burguer');
@@ -32,5 +32,5 @@ document.addEventListener('click', (evento) => {
 });
 
 // COMPORTAMENTO DOS BOTÕES DE FILTRO DO MENU HAMBÚRGUER
-const botoesDeFiltro = document.querySelectorAll('.link-de-filtro');
-botoesDeFiltro.forEach(botaoDeFiltro => botaoDeFiltro.addEventListener('click', filtrarImoveis));
+// const botoesDeFiltro = document.querySelectorAll('.link-de-filtro');
+// botoesDeFiltro.forEach(botaoDeFiltro => botaoDeFiltro.addEventListener('click', filtrarImoveis));
