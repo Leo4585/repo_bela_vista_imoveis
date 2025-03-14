@@ -9,7 +9,7 @@ getBuscarImoveisDaAPI();
 
 async function getBuscarImoveisDaAPI() {
   const res = await fetch(endpointDaAPI);
-  imoveis = await res.json();  // Aqui o array "imoveis" é alimentado
+  imoveis = await res.json();  // Aqui o array "imoveis" é alimentado/atualizado
   exibirImoveisNaTela(imoveis)
 }
 

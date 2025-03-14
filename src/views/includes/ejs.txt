@@ -1,5 +1,5 @@
-<% Controle de fluxo (if, for...) %>
-<%= Imprime escapando caracteres %>
+<% Controle de fluxo (if, for...) %>     // Lógica do código JS
+<%= Imprime escapando caracteres %>      // Imprime na tela
 <%- Imprime sem escapar caracteres %>
 <%# Comentário %>
 <%- include('CAMINHO/ARQUIVO'); %>
@@ -8,8 +8,8 @@
 
 EXEMPLO DE CONTROLE DE FLUXO:
 
-<% if (algumaCoisa) { %>
-  <% exibe(algumaCoisa); %>
-<% } else { %>
-  <% exibe(outraCoisa); %>
-<% } %>
+<ul>
+  <% minhaLista.forEach(item => { %>
+    <li><%= item %></li>
+  <% }); %>
+</ul>
