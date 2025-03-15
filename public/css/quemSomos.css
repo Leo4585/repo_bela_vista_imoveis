@@ -1,0 +1,7 @@
+.principal_quem_somos {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-de-fundo);
+  margin-top: 90px; /* Necessário para que o conteúdo não fique atrás da nav */
+  gap: 15px;
+}

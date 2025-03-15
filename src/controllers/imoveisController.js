@@ -14,7 +14,7 @@ async function getBuscarImoveisDaAPI() {
 class ImoveisController {
   static async paginaInicial (req, res) {
     try {
-      res.render('index', { listaDeImoveis: imoveis });    
+      res.render('index', { listaDeImoveis: imoveis, title: 'Bela Vista Imóveis'});    
     } catch (error) {
       res.send('Erro ao carregar a página inicial');
     }
@@ -24,7 +24,7 @@ class ImoveisController {
     try {
       const categoria = 'casa';
       let casasFiltradas = imoveis.filter(imovel => imovel.categoria == categoria);
-      res.render('index', { listaDeImoveis: casasFiltradas });
+      res.render('index', { listaDeImoveis: casasFiltradas, title: 'Casas à venda'});
     } catch (error) {
       res.send('Erro ao carregar a página de casas à venda');
     }
@@ -34,7 +34,7 @@ class ImoveisController {
     try {
       const categoria = 'aluguel';
       let casasDeAluguelFiltradas = imoveis.filter(imovel => imovel.categoria == categoria);
-      res.render('index', { listaDeImoveis: casasDeAluguelFiltradas });
+      res.render('index', { listaDeImoveis: casasDeAluguelFiltradas,title: 'Casas para aluguel'});
     } catch (error) {
       res.send('Erro ao carregar a página de casas de aluguel');
     }
@@ -44,7 +44,7 @@ class ImoveisController {
     try {
       const categoria = 'terreno';
       let terrenosFiltrados = imoveis.filter(imovel => imovel.categoria == categoria);
-      res.render('index', { listaDeImoveis: terrenosFiltrados });
+      res.render('index', { listaDeImoveis: terrenosFiltrados, title: 'Terrenos à venda'});
     } catch (error) {
       res.send('Erro ao carregar a página de terrenos');
     }
@@ -52,7 +52,7 @@ class ImoveisController {
 
   static async contato (req, res) {
     try {
-      res.render('contato');
+      res.render('contato', {title: 'Contato'});
     } catch (error) {
       res.send('Erro ao carregar a página contato');
     }
@@ -60,7 +60,7 @@ class ImoveisController {
 
   static async quemSomos (req, res) {
     try {
-      res.render('quemSomos');
+      res.render('quemSomos', {title: 'Quem somos'});
     } catch (error) {
       res.send('Erro ao carregar a página Quem Somos');
     }
