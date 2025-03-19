@@ -10,5 +10,6 @@ routes.get('/aluguel', ImoveisController.filtrarCasasDeAluguel);
 routes.get('/terrenos', ImoveisController.filtrarTerrenos);
 routes.get('/quemsomos', ImoveisController.quemSomos);
 routes.get('/contato', ImoveisController.contato);
+routes.post('/contato', ImoveisController.cadastrarContato);
 
 export default routes;

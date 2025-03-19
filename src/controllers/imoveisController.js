@@ -1,3 +1,4 @@
+import contato from "../models/Contato.js";
 
 
 let imoveis = [];
@@ -45,7 +46,7 @@ class ImoveisController {
       const categoria = 'terreno';
       let terrenosFiltrados = imoveis.filter(imovel => imovel.categoria == categoria);
       res.render('index', { listaDeImoveis: terrenosFiltrados, title: 'Terrenos à venda'});
-    } catch (error) {
+    } catch (erro) {
       res.send('Erro ao carregar a página de terrenos');
     }
   };
@@ -53,15 +54,24 @@ class ImoveisController {
   static async contato (req, res) {
     try {
       res.render('contato', {title: 'Contato'});
-    } catch (error) {
+    } catch (erro) {
       res.send('Erro ao carregar a página contato');
+    }
+  };
+
+  static async cadastrarContato (req, res) {
+    try {
+      const novoContato = await contato.create(req.body);
+      console.log(req.body)
+    } catch (erro) {
+      res.status(500).json({ message: `${erro.message} - Falha ao cadastrar mensagem de contato` });
     }
   };
 
   static async quemSomos (req, res) {
     try {
       res.render('quemSomos', {title: 'Quem somos'});
-    } catch (error) {
+    } catch (erro) {
       res.send('Erro ao carregar a página Quem Somos');
     }
   };
