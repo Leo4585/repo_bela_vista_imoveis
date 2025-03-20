@@ -62,7 +62,7 @@ class ImoveisController {
   static async cadastrarContato (req, res) {
     try {
       const novoContato = await contato.create(req.body);
-      console.log(req.body)
+      res.status(201).json({ message: 'Mensagem enviada com sucesso!' });
     } catch (erro) {
       res.status(500).json({ message: `${erro.message} - Falha ao cadastrar mensagem de contato` });
     }
