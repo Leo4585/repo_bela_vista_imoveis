@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="principal">
@@ -23,7 +24,7 @@
     <form class="formulario_de_contato" id="formulario-contato" method="post" action="">
         <div class="caixa__label_input">
             <label for="nome">Seu nome (obrigatório)</label>
-            <input class="form__input" type="text" id="nome=" name="nome" required>
+            <input class="form__input" type="text" id="nome" name="nome" required>
         </div>
         <div class="caixa__label_input">
             <label for="telefone">Seu telefone (obrigatório)</label>
@@ -41,6 +42,7 @@
         <button id="btn_enviar" type="submit">Enviar</button>
     </form>
 
+    <script type="module" src="/scripts/mostrarSuccessOuError.js"></script>
 </body>
 
 </html>
