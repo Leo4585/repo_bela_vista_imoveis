@@ -18,13 +18,14 @@ formularioDeContato.addEventListener('submit', async (evento) => {
         title: data.message,
         icon: "success",
         draggable: true,
-        width: '16em'
+        width: '10em'
       });
     } else {
       Swal.fire({
         title: data.message,
         icon: "error",
-        draggable: true
+        draggable: true,
+        width: '10em'
       });
     }
   } catch (error) {
