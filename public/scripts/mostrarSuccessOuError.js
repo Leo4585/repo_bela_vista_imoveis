@@ -21,6 +21,7 @@ formularioDeContato.addEventListener('submit', async (evento) => {
         width: '16em',
         imageHeight: '16em'
       });
+      formularioDeContato.reset();
     } else {
       Swal.fire({
         title: data.message,
